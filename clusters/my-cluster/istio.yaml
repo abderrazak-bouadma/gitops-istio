@@ -4,7 +4,7 @@ metadata:
   name: istio-system
   namespace: flux-system
 spec:
-  interval: 10m0s
+  interval: 1m0s
   path: ./istio/system
   prune: true
   wait: true
@@ -24,7 +24,7 @@ metadata:
 spec:
   dependsOn:
     - name: istio-system
-  interval: 10m0s
+  interval: 1m0s
   path: ./istio/gateway
   prune: true
   wait: true
